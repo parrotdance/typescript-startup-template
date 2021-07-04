@@ -1,6 +1,6 @@
 import Koa from 'koa'
 import mongo from 'mongodb'
-import { Collection, Db, MongoClient } from 'mongodb'
+import { MongoClient } from 'mongodb'
 
 async function connectDb() {
   const uri = `mongodb://<write-uri-of-mongodb-here>`
@@ -26,8 +26,6 @@ export default async function mountDbToContextOf(app: Koa) {
 
 export type DbContext = {
   db: {
-    client: MongoClient,
-    zeekie: Db,
-    zeekieCols: Collection[]
+    client: MongoClient
   }
 }

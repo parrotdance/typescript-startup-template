@@ -1,5 +1,5 @@
 {
-  "name": "zeekie",
+  "name": "typescript-startup-template",
   "version": "0.1.0",
   "scripts": {
     "dev": "ts-node --project tsconfig.json index.ts",
